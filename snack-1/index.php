@@ -25,7 +25,8 @@ var_dump($array);
 $score = [];
 // echo $array[0]['squadra-casa'];
 foreach ($array as &$game) {
-    foreach ($game as &$score) {
-        echo $score;
-    };
+    // foreach ($game as &$score) {
+    //     echo $score;
+    // };
+    echo $game['squadra-casa'] . ' - ' . $game['squadra-ospite'] . ' | ' . $game['punti-casa'] . ' - ' . $game['punti-ospite'] . ' ';
 };
