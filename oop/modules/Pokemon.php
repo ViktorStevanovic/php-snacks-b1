@@ -16,3 +16,8 @@ class Pokemon
         $this->regione = $_regione;
     }
 }
+
+$pikachu = new Pokemon('pikachu', 'elettro', 23, 3, 'kanto');
+$totodile = new Pokemon('totodile', 'acqua', 99, 3, 'johto');
+
+var_dump($pikachu, $totodile);
